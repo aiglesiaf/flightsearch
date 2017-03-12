@@ -1,7 +1,6 @@
 machine:
   java:
     version: openjdk8
-version: 2
 test:
   override:
     - mvn test -Dtest=AllTests
