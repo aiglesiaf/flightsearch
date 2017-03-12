@@ -1,6 +1,10 @@
 machine:
   java:
     version: openjdk8
-test:
-  override:
-    - mvn test -Dtest=AllTests
+version: 2
+jobs:
+  build:
+    working_directory: ~/flightsearch
+    steps:
+      - checkout
+      - run: mvn install
