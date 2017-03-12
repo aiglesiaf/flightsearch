@@ -5,6 +5,8 @@ version: 2
 jobs:
   build:
     working_directory: ~/flightsearch
+    docker:
+      - image: python:3.6.0
     steps:
       - checkout
       - run: mvn install
