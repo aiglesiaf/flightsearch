@@ -7,6 +7,6 @@ import org.junit.runners.Suite.SuiteClasses;
 @RunWith(Suite.class)
 @SuiteClasses({ BasicTests.class,
 				CriteriaTests.class})
-public class AllTests {
+public class TestAll {
 
 }
