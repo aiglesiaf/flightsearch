@@ -9,3 +9,6 @@ jobs:
       - image: python:3.6.0
     steps:
       - checkout
+      - run:
+          name: Run Tests
+          command: python manage.py test
