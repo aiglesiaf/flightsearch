@@ -11,4 +11,4 @@ jobs:
       - checkout
       - run:
           name: Run Tests
-          command: python manage.py test
+          command: mvn test
