@@ -2,6 +2,13 @@ machine:
   java:
     version: openjdk8
 version: 2
-test:
- override:
-  - mvn test -Dtest=AllTests
+jobs:
+  build:
+    working_directory: ~/flightsearch
+    docker:
+      - image: python:3.6.0
+    steps:
+      - checkout
+  test:
+   override:
+    - mvn test -Dtest=AllTests
